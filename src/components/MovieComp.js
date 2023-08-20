@@ -28,7 +28,7 @@ function MovieComp() {
       dispatch(addDetails(data));
       // eslint-disable-next-line react-hooks/exhaustive-deps
     })();
-  }, [text]);
+  }, [dispatch,text]);
   return (
     <>
       <input
