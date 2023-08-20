@@ -19,7 +19,7 @@ let input = {
 function MovieComp() {
   const [text, setText] = useState("war");
   const movies = useSelector((store) => store.movie.movieData);
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
   useEffect(() => {
     (async function f1() {
       const response = await fetch(

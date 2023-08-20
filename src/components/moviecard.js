@@ -5,7 +5,7 @@ function Moviecard(props) {
   // console.log(props)
   return (
     <div className="container">
-      <img className="image" src={props.data.Poster} />
+      <img src={props.data.Poster} className="image"alt="image-shown"/>
       <div className="details">
         <h3>{props.data.Title}</h3>
         <p>{props.data.Year}</p>
