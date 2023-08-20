@@ -1,3 +1,14 @@
+*{
+  background-color: rgb(30,41,49);
+  box-sizing: border-box;
+}
+@media screen and (max-width: 700px) {
+  .container{
+    display: inline-flex;
+  }
+}
+
+
 .container{
     position: relative;
     width: 300px;
