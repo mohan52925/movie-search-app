@@ -22,11 +22,11 @@ function MovieComp() {
   const dispatch = useDispatch()
   useEffect(() => {
     (async function f1() {
-      const response = await fetch(
-        `https://www.omdbapi.com/?apikey=45f0782a&s=${text}`
-      );
+      let url =  `https://www.omdbapi.com/?apikey=45f0782a&s=${text}`
+      const response = await fetch(url);
       const data = await response.json();
       dispatch(addDetails(data));
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     })();
   }, [text]);
   return (
